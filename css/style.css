@@ -3,3 +3,128 @@
 /*Some selectors you may need include are
 a.skip, header, .nav_links, .container,
 .intro, html, .text-block, etc.*/
+
+/* 4 */
+a.skip {
+  position: absolute;
+  top: -40px;
+}
+
+a.skip:focus {
+  top: 0px;
+}
+
+/* 5 */
+header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* 6 */
+.nav_links {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+/* 7 */
+.nav_links a:hover,
+.nav_links a:focus {
+  text-decoration-line: underline;
+  text-decoration-style: dashed;
+  color: #50c7c7;
+}
+
+/* 8 */
+nav li {
+  padding-bottom: 5px;
+}
+
+/* 9 */
+#logo {
+  animation: start 1s 1;
+}
+
+@keyframes start {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 50px;
+  }
+}
+
+/* 10 */
+.container {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: auto auto auto auto auto;
+  row-gap: 15px;
+}
+
+/* 11 */
+.intro {
+  background-image: url("../images/header.jpg");
+  height: 400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  grid-column: 1 / -1;
+}
+
+/* 12 */
+.intro p {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+/* 13 */
+.about-image,
+.method-image,
+.clients-image,
+.contact-image {
+  grid-column: 1 / -1;
+  max-height: 700px;
+  overflow: hidden;
+}
+
+/* 14 */
+.about,
+.method,
+.clients,
+.contact {
+  grid-column: 2 / -2;
+}
+
+/* 15 */
+.about,
+.about-image {
+  grid-row: 2 / span 1;
+}
+
+.method,
+.method-image {
+  grid-row: 3 / span 1;
+}
+
+.clients,
+.clients-image {
+  grid-row: 4 / span 1;
+}
+
+.contact,
+.contact-image {
+  grid-row: 5 / span 1;
+}
+
+/* 16 */
+.text-block {
+  justify-self: center;
+  align-self: center;
+}
+
+/* 17 */
+/* TODO: */
