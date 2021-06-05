@@ -162,3 +162,65 @@ nav li {
     grid-column: 2 / 4;
   }
 }
+
+@media all and (min-width: 1125px) {
+  /* 23 */
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  /* 24 */
+  @keyframes start {
+    0% {
+      width: 50px;
+    }
+    50% {
+      width: 150px;
+      left: 450px;
+    }
+    100% {
+      width: 50px;
+    }
+  }
+
+  /* 25 */
+  .container {
+    grid-template-columns: 15px 75px 1fr 25px 1fr 75px 15px;
+    grid-template-rows: 400px 400px 400px;
+  }
+
+  /* 26 */
+  .about-image,
+  .clients-image {
+    grid-column: 2 / 7;
+  }
+  .method-image,
+  .contact-image {
+    display: none;
+  }
+
+  /* 27, 28 */
+  .about {
+    grid-column: 3 / 4;
+  }
+
+  .method {
+    grid-row: 2 / 3;
+    grid-column: 5 / 6;
+  }
+
+  .clients {
+    grid-row: 3 / 4;
+    grid-column: 3 / 4;
+  }
+
+  .clients-image {
+    grid-row: 3 / 4;
+  }
+
+  .contact {
+    grid-row: 3 / 4;
+    grid-column: 5 / 6;
+  }
+}
