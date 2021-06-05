@@ -241,3 +241,40 @@ nav li {
     background-attachment: scroll;
   }
 }
+
+@media print {
+  /* 33 */
+  img {
+    display: none;
+  }
+
+  img#logo {
+    display: initial;
+  }
+
+  * {
+    background-image: none !important;
+  }
+
+  /* 34 */
+  .nav_links {
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100vw;
+  }
+
+  /* 35 */
+  .text-block,
+  .intro {
+    height: unset;
+    min-height: unset;
+  }
+
+  .container {
+    grid-template-rows: unset;
+  }
+
+  .intro p {
+    padding: unset;
+  }
+}
